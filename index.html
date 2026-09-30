@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QORE.SYS | Tech & Software House</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #07090e;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.25);
+    }
+    .glow-border:hover {
+      border-color: #00e5ff;
+      box-shadow: 0 0 20px -3px rgba(0, 229, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col items-center justify-center p-4 relative overflow-x-hidden selection:bg-cyan-500 selection:text-black">
+
+  <!-- Efecto de luz ambiental de fondo -->
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <main class="w-full max-w-md mx-auto flex flex-col items-center text-center z-10">
+
+    <!-- Estado del Sistema / Badge -->
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-slate-800 text-xs text-slate-400 mb-6 backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="mono tracking-wider">SYSTEM ONLINE • DISPONIBLES</span>
+    </div>
+
+    <!-- Isotipo / Logo Minimalista -->
+    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-slate-900 to-black border border-slate-700/60 flex items-center justify-center mb-4 glow-cyan">
+      <!-- Icono Q Minimalista -->
+      <span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-white mono">Q_</span>
+    </div>
+
+    <!-- Nombre de Marca & Descripción -->
+    <h1 class="text-2xl font-extrabold tracking-tight text-white mb-1">
+      QORE<span class="text-cyan-400 mono font-semibold">.SYS</span>
+    </h1>
+    <p class="text-xs tracking-widest text-slate-400 uppercase mono mb-3">Software & Tech Solutions</p>
+    <p class="text-sm text-slate-300 max-w-xs mb-8 leading-relaxed">
+      Desarrollo de Software a medida, Infraestructura de Redes y Soluciones de Hardware de alto rendimiento.
+    </p>
+
+    <!-- Lista de Enlaces / Acciones -->
+    <div class="w-full space-y-3.5 mb-8">
+
+      <!-- Botón 1: Formulario de Cotización (Principal) -->
+      <a href="https://tally.so/r/TU-CODIGO" target="_blank" rel="noopener noreferrer" 
+         class="group block w-full p-4 rounded-xl bg-gradient-to-r from-cyan-500/10 to-transparent border border-cyan-500/40 text-left transition-all duration-300 glow-border hover:-translate-y-0.5 backdrop-blur-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-xl">⚡</span>
+            <div>
+              <p class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">Solicitar Cotización</p>
+              <p class="text-xs text-slate-400">Recibe una propuesta técnica en 24h</p>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-cyan-400 transition-colors text-sm mono">-></span>
+        </div>
+      </a>
+
+      <!-- Botón 2: Correo Directo -->
+      <a href="mailto:contacto.qoresys@gmail.com" 
+         class="group block w-full p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-left transition-all duration-300 glow-border hover:-translate-y-0.5 backdrop-blur-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-xl">📩</span>
+            <div>
+              <p class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">Contacto Directo</p>
+              <p class="text-xs text-slate-400">contacto.qoresys@gmail.com</p>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-cyan-400 transition-colors text-sm mono">-></span>
+        </div>
+      </a>
+
+      <!-- Botón 3: Instagram -->
+      <a href="https://instagram.com/qore.sys" target="_blank" rel="noopener noreferrer"
+         class="group block w-full p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-left transition-all duration-300 glow-border hover:-translate-y-0.5 backdrop-blur-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🌐</span>
+            <div>
+              <p class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">Instagram Oficial</p>
+              <p class="text-xs text-slate-400">@qore.sys</p>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-cyan-400 transition-colors text-sm mono">-></span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Tech Stack Pills -->
+    <div class="w-full pt-4 border-t border-slate-800/80">
+      <p class="text-[11px] mono text-slate-500 uppercase tracking-widest mb-3">Core Stack & Capacidades</p>
+      <div class="flex flex-wrap justify-center gap-1.5 text-[11px] mono text-slate-400">
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800">Web & Apps</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800">Networking / IT</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800">Cloud & Linux</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800">Hardware Lab</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-xs text-slate-600 mono">
+      © <script>document.write(new Date().getFullYear())</script> QORE.SYS • All systems operational.
+    </footer>
+
+  </main>
+
+</body>
+</html>
